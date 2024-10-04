@@ -1,5 +1,5 @@
 * [TemperingOrigins](markdown/TemperingOrigins/update.md)
-  * [简介](markdown/TemperingOrigins/update.md)
-  * [安装](markdown/TemperingOrigins/update.md)
-  * [配置](markdown/TemperingOrigins/update.md)
+  * [简介](markdown/TemperingOrigins/introduction.md)
+  * [安装](markdown/TemperingOrigins/install.md)
+  * [配置](markdown/TemperingOrigins/settings.md)
 * [CSXItemSkills](markdown/CSXItemSkills/update.md)

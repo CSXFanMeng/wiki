@@ -1,0 +1,9 @@
+## 联系方式
+
+- 魔改作者凡梦QQ号(新版本NewCustomCuiLianPro和TemperingOrigins免费/付费/定制版作者)
+    - 1194450050
+- 原作者老吕QQ号(NewCustomCuiLian/老版本NewCustomCuiLianPro作者)
+    - 2123546812
+- 交流群QQ号
+    - 718558486(新群 主新老版本和其他插件交流，新免费版仅发这群)
+    - 697706531(老群 主新老版本和其他插件交流，不在推送新免费版)
