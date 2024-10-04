@@ -20,6 +20,8 @@
         loadSidebar: true, // 默认加载 _sidebar.md，作为侧边栏
         subMaxLevel: 6, // 生成目录的最大层级
         alias: {
+            '/#/en-us/(.*)':
+                '/en-us#/$1',
             '/#/zh-cn/(.*)':
                 '/zh-cn#/$1',
         },
@@ -27,11 +29,13 @@
             paths: 'auto',
             placeholder: {
                 '/': '搜索',
-                '/zh-cn/': '搜索',
+                'zh-cn': '搜索',
+                'en-us': 'Type to search',
             },
             noData: {
                 '/': '找不到结果',
-                '/zh-cn/': '找不到结果',
+                'zh-cn': '找不到结果',
+                'en-us': 'No Results'
             },
             depth: 6,
         },
@@ -43,20 +47,23 @@
             buttonText: {
                 '/': '点击复制',
                 '/zh-cn/': '点击复制',
+                '/en-us/': 'Click to Copy',
             },
             errorText: {
                 '/': '复制失败',
                 '/zh-cn/': '复制失败',
+                '/en-us/': 'Copy Failed',
             },
             successText: {
                 '/': '复制成功',
                 '/zh-cn/': '复制成功',
+                '/en-us/': 'Copy Successful',
             },
         },
         toc: {
             scope: '.markdown-section',
             headings: 'h1, h2, h3, h4, h5, h6',
-            title: '点击跳转',
+            title: '点击跳转|Click to Go',
         },
         progress: {
             position: "top",
