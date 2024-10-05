@@ -5,5 +5,13 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="docsify-prism" level="application" />
+    <orderEntry type="library" name="prismjs" level="application" />
+    <orderEntry type="library" name="docsify" level="application" />
+    <orderEntry type="library" name="docsify-toc" level="application" />
+    <orderEntry type="library" name="docsify-hide-code" level="application" />
+    <orderEntry type="library" name="sidebar" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="docsify-sidebar-collapse" level="application" />
   </component>
 </module>

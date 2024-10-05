@@ -1,10 +1,10 @@
-# 1.1.1 付费/定制版
+## 1.1.1 付费/定制版
 
 - 新增nbt模块
 - 更新TabooLib版本
 - 新增内置粒子函数
 
-```java
+```java line-numbers
 public static void spawnParticle(Location location, Player player, Particle particle, Vector offset, double speed, int count, Object data) {
 }
 
@@ -20,7 +20,7 @@ public static void createAstroid(Player player, String particleName, double radi
 public static void createCircle(Player player, String particleName, double radius, double step, long period, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
-public static void createCube(Player player, String particleName, taboolib.common.util.Location minLoc, taboolib.common.util.Location maxLoc, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
+public static void createCube(Player player, String particleName, Location minLoc, Location maxLoc, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
 public static void createFilledCircle(Player player, String particleName, double radius, int sample, Vector vector, int count, double speed, ProxyParticle.Data data) {
@@ -29,10 +29,10 @@ public static void createFilledCircle(Player player, String particleName, double
 public static void createHeart(Player player, String particleName, double xScaleRate, double yScaleRate, long period, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
-public static void createLine(Player player, String particleName, taboolib.common.util.Location end, double step, long period, Vector vector, int count, double speed, ProxyParticle.Data data) {
+public static void createLine(Player player, String particleName, Location end, double step, long period, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
-public static void createNRankBezierCurve(Player player, String particleName, List<taboolib.common.util.Location> locations, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
+public static void createNRankBezierCurve(Player player, String particleName, List<Location> locations, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
 public static void createNStar(Player player, String particleName, int corner, double radius, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
@@ -56,10 +56,10 @@ public static void createSphere(Player player, String particleName, int sample, 
 public static void createStar(Player player, String particleName, double radius, double step, long period, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
-public static void createThreeRankBezierCurve(Player player, String particleName, taboolib.common.util.Location p0, taboolib.common.util.Location p1, taboolib.common.util.Location p2, taboolib.common.util.Location p3, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
+public static void createThreeRankBezierCurve(Player player, String particleName, Location p0, Location p1, Location p2, Location p3, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 
-public static void createTwoRankBezierCurve(Player player, String particleName, taboolib.common.util.Location p0, taboolib.common.util.Location p1, taboolib.common.util.Location p2, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
+public static void createTwoRankBezierCurve(Player player, String particleName, Location p0, Location p1, Location p2, double step, Vector vector, int count, double speed, ProxyParticle.Data data) {
 }
 ```
 
@@ -67,17 +67,17 @@ public static void createTwoRankBezierCurve(Player player, String particleName, 
 - 更新了验证版本
 - 新增PlaceholderAPI的相关变量扩展
     - 淬炼的最高等级
-      - >%CSXPlaceholder_Tempering_maxTemperingLevel%
+        - > %CSXPlaceholder_Tempering_maxTemperingLevel%
     - 一共淬炼了多少次
-      - >%CSXPlaceholder_Tempering_temperingAmount%
+        - > %CSXPlaceholder_Tempering_temperingAmount%
     - 淬炼成功了多少次
-      - >%CSXPlaceholder_Tempering_temperingSuccessAmount%
+        - > %CSXPlaceholder_Tempering_temperingSuccessAmount%
     - 淬炼失败了多少次
-      - >%CSXPlaceholder_Tempering_temperingFailAmount%
+        - > %CSXPlaceholder_Tempering_temperingFailAmount%
     - 用某个淬炼石淬炼成功了多少次
-      - >%CSXPlaceholder_Tempering_temperingStoneSuccessAmount_淬炼石名称%
+        - > %CSXPlaceholder_Tempering_temperingStoneSuccessAmount_淬炼石名称%
     - 用某个淬炼石淬炼失败了多少次
-      - >%CSXPlaceholder_Tempering_temperingStoneFailAmount_淬炼石名称%
+        - > %CSXPlaceholder_Tempering_temperingStoneFailAmount_淬炼石名称%
 - 更新给予淬炼石/保护符的方法
 - 更新淬炼UI
 - 更新移星UI

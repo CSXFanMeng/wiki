@@ -2,6 +2,7 @@
   * [简介](markdown/TemperingOrigins/introduction.md)
   * [安装](markdown/TemperingOrigins/install.md)
   * [配置](markdown/TemperingOrigins/settings.md)
+    * [config.yml](markdown/TemperingOrigins/settings/config-yml.md)
   * [更新记录](markdown/TemperingOrigins/update.md)
 * [CSXItemSkills](markdown/CSXItemSkills/introduction.md)
   * [简介](markdown/CSXItemSkills/introduction.md)

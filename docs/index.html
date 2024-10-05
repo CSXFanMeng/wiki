@@ -6,9 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/toolbar/prism-toolbar.css">
+    <style>
+        pre[class*="language-"].line-numbers.line-numbers {
+            margin: 0; /* 移除默认的外边距 */
+            padding: 0; /* 移除默认的内边距 */
+        }
+
+        pre[class*="language-"].line-numbers.line-numbers code {
+            white-space: pre; /* 保持代码块中的换行 */
+            padding-top: 15px;
+            padding-left: 3.8em; /* 添加一些内边距以保持可读性 */
+            padding-bottom: 15px;
+            font-size: 16px; /* 特定语言的字体大小 */
+        }
+
+        pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
+            left: 0;
+            top: 15px; /* 调整行号的位置 */
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>
@@ -19,6 +41,9 @@
         loadNavbar: false, // 默认加载 _navbar.md，作为顶部导航栏
         loadSidebar: true, // 默认加载 _sidebar.md，作为侧边栏
         subMaxLevel: 6, // 生成目录的最大层级
+        maxLevel: 6, // 最大支持渲染的标题层级
+        auto2top: true, // 切换页面后是否自动跳转到页面顶部
+        mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
         search: {
             paths: 'auto',
             placeholder: {
@@ -46,35 +71,76 @@
         },
         toc: {
             scope: '.markdown-section',
-            headings: 'h1, h2, h3, h4, h5, h6',
+            headings: 'h2, h3, h4, h5, h6',
             title: '点击跳转',
         },
-        progress: {
-            position: "top",
-            color: "var(--theme-color,#42b983)",
-            height: "3px",
-        },
+        plugins: [
+            function(hook, vm) {
+                hook.init(function() {
+                    // 初始化完成后调用，只调用一次，没有参数。
+                });
+
+                hook.beforeEach(function(content) {
+                    // 每次开始解析 Markdown 内容时调用
+                    // ...
+                    return content;
+                });
+
+                hook.afterEach(function(html, next) {
+                    // 解析成 html 后调用。
+                    // beforeEach 和 afterEach 支持处理异步逻辑
+                    // ...
+                    // 异步处理完成后调用 next(html) 返回结果
+                    next(html);
+                });
+
+                hook.doneEach(function() {
+                    // 每次路由切换时数据全部加载完成后调用，没有参数。
+                    // ...
+                    var e = document.getElementById("main");
+                    Prism.highlightAllUnder(e)
+                    Prism.hooks.add('line-numbers', function (env) {
+                        env.plugins = env.plugins || {};
+                        env.plugins.lineNumbers = true;
+                    });
+                });
+
+                hook.mounted(function() {
+                    // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+                    Prism.highlightAll()
+                    Prism.hooks.add('line-numbers', function (env) {
+                        env.plugins = env.plugins || {};
+                        env.plugins.lineNumbers = true;
+                    });
+                });
+
+                hook.ready(function() {
+                    // 初始化并第一次加载完成数据后调用，没有参数。
+                });
+            }
+        ],
     }
 </script>
+
 <!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 <!-- 搜索插件 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 <!--代码折叠-->
 <script src="https://unpkg.com/docsify-hide-code"></script>
 <!-- 一键复制插件 -->
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-<!-- 代码高亮 -->
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.js"></script>
+<!-- prism -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.js"></script>
 <!--外链脚本-->
-<script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+<script src="https://unpkg.com/docsify/lib/plugins/external-script.js"></script>
 <!-- 侧边栏折叠 -->
-<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 <!--目录跳转-->
 <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
-<!--进度条-->
-<script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+<!--图片缩放-->
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
