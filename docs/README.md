@@ -1,15 +1,24 @@
 ## 作者联系方式
+
 QQ
->1194450050
+> 1194450050
+
 ## 购买注意事项
+
 认准联系方式进行购买\
 购买的插件不支持退款
+
 ## 插件列表
+
 * [TemperingOrigins](markdown/TemperingOrigins/introduction.md)
     * [简介](markdown/TemperingOrigins/introduction.md)
     * [安装](markdown/TemperingOrigins/install.md)
     * [配置](markdown/TemperingOrigins/settings.md)
         * [config.yml](markdown/TemperingOrigins/settings/config-yml.md)
+            * [开启非玩家实体套装粒子特效](markdown/TemperingOrigins/settings/config/OtherEntitySuitEffect.md)
+            * [保护符lore行识别符号](markdown/TemperingOrigins/settings/config/PROTECT_RUNE_JUDGE.md)
+            * [属性lore行识别符号](markdown/TemperingOrigins/settings/config/LEVEL_JUDGE.md)
+            * [移星界面标题](markdown/TemperingOrigins/settings/config/MoveLevelInvTitle.md)
     * [更新记录](markdown/TemperingOrigins/update.md)
 * [CSXItemSkills](markdown/CSXItemSkills/introduction.md)
     * [简介](markdown/CSXItemSkills/introduction.md)
