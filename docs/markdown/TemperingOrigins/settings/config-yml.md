@@ -1,27 +1,29 @@
-* [OtherEntitySuitEffect](markdown/TemperingOrigins/settings/config/OtherEntitySuitEffect.md)
-* [PROTECT_RUNE_JUDGE](markdown/TemperingOrigins/settings/config/PROTECT_RUNE_JUDGE.md)
-* [LEVEL_JUDGE](markdown/TemperingOrigins/settings/config/LEVEL_JUDGE.md)
-* [JudgeOffHand](markdown/TemperingOrigins/settings/config/JudgeOffHand.md)
-* [MoveLevelInvTitle](markdown/TemperingOrigins/settings/config/MoveLevelInvTitle.md)
-* [DisplayNameFormat](markdown/TemperingOrigins/settings/config/DisplayNameFormat.md)
-* [DisplayNameColor](markdown/TemperingOrigins/settings/config/DisplayNameColor.md)
-* [ProtectRuneList](markdown/TemperingOrigins/settings/config/ProtectRuneList.md)
-* [ProtectRuneType](markdown/TemperingOrigins/settings/config/ProtectRuneType.md)
-* [ProtectRuneTypeMateMode](markdown/TemperingOrigins/settings/config/ProtectRuneTypeMateMode.md)
-* [CuiLianInventoryName](markdown/TemperingOrigins/settings/config/CuiLianInventoryName.md)
-* [FurnaceTick](markdown/TemperingOrigins/settings/config/FurnaceTick.md)
-* [Unbreakable](markdown/TemperingOrigins/settings/config/Unbreakable.md)
-* [AnvilSound](markdown/TemperingOrigins/settings/config/AnvilSound.md)
-* [CuiLianType](markdown/TemperingOrigins/settings/config/CuiLianType.md)
-* [UpdateItemBoolean](markdown/TemperingOrigins/settings/config/UpdateItemBoolean.md)
-* [EnchantmentMethod](markdown/TemperingOrigins/settings/config/EnchantmentMethod.md)
-* [BungeeMode](markdown/TemperingOrigins/settings/config/BungeeMode.md)
-* [NbtTag](markdown/TemperingOrigins/settings/config/NbtTag.md)
-* [ItemLimitLevel](markdown/TemperingOrigins/settings/config/ItemLimitLevel.md)
-* [GenerateLevel](markdown/TemperingOrigins/settings/config/GenerateLevel.md)
-* [GenerateStoneChance](markdown/TemperingOrigins/settings/config/GenerateStoneChance.md)
-* [CommandHead](markdown/TemperingOrigins/settings/config/CommandHead.md)
-* [CuiLianSuccess](markdown/TemperingOrigins/settings/config/CuiLianSuccess.md)
-* [CuiLianFail](markdown/TemperingOrigins/settings/config/CuiLianFail.md)
-* [ProtectRuneInlayDeplete](markdown/TemperingOrigins/settings/config/ProtectRuneInlayDeplete.md)
-* [ProtectRuneQuenchDeplete](markdown/TemperingOrigins/settings/config/ProtectRuneQuenchDeplete.md)
+| 配置项                                                                                               | 免费版    | 付费版     | 定制版     |
+|---------------------------------------------------------------------------------------------------|--------|---------|---------|
+| [OtherEntitySuitEffect](markdown/TemperingOrigins/settings/config/OtherEntitySuitEffect.md)       | √      | √       | √       |
+| [PROTECT_RUNE_JUDGE](markdown/TemperingOrigins/settings/config/PROTECT_RUNE_JUDGE.md)             | √      | √       | √       |
+| [LEVEL_JUDGE](markdown/TemperingOrigins/settings/config/LEVEL_JUDGE.md)                           | √      | √       | √       |
+| [JudgeOffHand](markdown/TemperingOrigins/settings/config/JudgeOffHand.md)                         | √      | √       | √       |
+| [MoveLevelInvTitle](markdown/TemperingOrigins/settings/config/MoveLevelInvTitle.md)               | √      | √       | √       |
+| [DisplayNameFormat](markdown/TemperingOrigins/settings/config/DisplayNameFormat.md)               | √      | √       | √       |
+| [DisplayNameColor](markdown/TemperingOrigins/settings/config/DisplayNameColor.md)                 | ×      | √       | √       |
+| [ProtectRuneList](markdown/TemperingOrigins/settings/config/ProtectRuneList.md)                   | √      | √       | √       |
+| [ProtectRuneType](markdown/TemperingOrigins/settings/config/ProtectRuneType.md)                   | √      | √       | √       |
+| [ProtectRuneTypeMateMode](markdown/TemperingOrigins/settings/config/ProtectRuneTypeMateMode.md)   | √      | √       | √       |
+| [CuiLianInventoryName](markdown/TemperingOrigins/settings/config/CuiLianInventoryName.md)         | √(待删除) | √(已删除)  | √(已删除)  |
+| [FurnaceTick](markdown/TemperingOrigins/settings/config/FurnaceTick.md)                           | √      | √       | √       |
+| [Unbreakable](markdown/TemperingOrigins/settings/config/Unbreakable.md)                           | √      | √       | √       |
+| [AnvilSound](markdown/TemperingOrigins/settings/config/AnvilSound.md)                             | √      | √       | √       |
+| [CuiLianType](markdown/TemperingOrigins/settings/config/CuiLianType.md)                           | √      | √       | √       |
+| [UpdateItemBoolean](markdown/TemperingOrigins/settings/config/UpdateItemBoolean.md)               | √      | √       | √       |
+| [EnchantmentMethod](markdown/TemperingOrigins/settings/config/EnchantmentMethod.md)               | ×      | √       | √       |
+| [BungeeMode](markdown/TemperingOrigins/settings/config/BungeeMode.md)                             | ×      | √       | √       |
+| [NbtTag](markdown/TemperingOrigins/settings/config/NbtTag.md)                                     | ×      | √       | √       |
+| [ItemLimitLevel](markdown/TemperingOrigins/settings/config/ItemLimitLevel.md)                     | ×      | √       | √       |
+| [GenerateLevel](markdown/TemperingOrigins/settings/config/GenerateLevel.md)                       | ×      | √       | √       |
+| [GenerateStoneChance](markdown/TemperingOrigins/settings/config/GenerateStoneChance.md)           | ×      | √       | √       |
+| [CommandHead](markdown/TemperingOrigins/settings/config/CommandHead.md)                           | √      | 每个消息可配置 | 每个消息可配置 |
+| [CuiLianSuccess](markdown/TemperingOrigins/settings/config/CuiLianSuccess.md)                     | √      | 每级可配置   | 每级可配置   |
+| [CuiLianFail](markdown/TemperingOrigins/settings/config/CuiLianFail.md)                           | √      | 每级可配置   | 每级可配置   |
+| [ProtectRuneInlayDeplete](markdown/TemperingOrigins/settings/config/ProtectRuneInlayDeplete.md)   | √      | 每级可配置   | 每级可配置   |
+| [ProtectRuneQuenchDeplete](markdown/TemperingOrigins/settings/config/ProtectRuneQuenchDeplete.md) | √      | 每级可配置   | 每级可配置   |
