@@ -93,3 +93,4 @@ public static void createTwoRankBezierCurve(Player player, String particleName, 
 - 新增更多输出信息
 - 新增BungeeCord跨服淬炼消息
 - 插件构造改变(多模块化)
+- 更新MMOItems套装属性实现
