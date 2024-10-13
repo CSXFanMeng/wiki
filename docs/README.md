@@ -8,6 +8,10 @@ QQ
 认准联系方式进行购买\
 购买的插件不支持退款
 
+## 验证相关问题解答
+江苏的机房有可能在连接认证的时候被js96110拦截导致无法验证，暂无解决方案\
+如果是超时等原因大概率是丢包或者海外的问题建议多多重试
+
 ## 插件列表
 
 * [TemperingOrigins](markdown/TemperingOrigins/introduction.md)
