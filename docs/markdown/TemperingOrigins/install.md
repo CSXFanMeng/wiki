@@ -5,9 +5,10 @@
 - 可选的依赖有:
     - 属性插件部分
         - AttributePlus V2和V3
-        - SX-Attribute V2和V3
+        - SX-Attribute V2和V3和V4
         - OriginsAttribute
         - AttributeSystem
+        - MMOItems
     - 变量插件部分(付费/定制版独有)
         - PlaceholderAPI
 
